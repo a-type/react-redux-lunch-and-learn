@@ -1,0 +1,28 @@
+.profile {
+    background-color: $color-light;
+    color: $color-black;
+    padding: 4px;
+
+    .profile-component {
+        border: 1px dashed $color-dark;
+        margin: 4px;
+        background: $color-light;
+        padding: 4px;
+    }
+
+    .component-name {
+        font-size: 0.8em;
+        color: $color-dark;
+    }
+
+    .title {
+        font-size: 0.9em;
+    }
+}
+
+.profile-demo {
+    background: $color-white;
+    .changed {
+        background-color: transparentize($color-accent, 0.3);
+    }
+}

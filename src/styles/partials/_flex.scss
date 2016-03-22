@@ -1,0 +1,28 @@
+@mixin flex-basic {
+    display: flex;
+}
+
+@mixin flex-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-content-grow {
+    flex: 1;
+}
+
+@mixin flex-content-center {
+    margin: auto;
+}
+
+@mixin flex-center-content {
+    justify-content: center;
+}
+
+@mixin flex-outside-content {
+    justify-content: space-between;
+}
+
+@mixin flex-align-bottom {
+    align-items: flex-end;
+}

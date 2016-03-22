@@ -1,0 +1,12 @@
+code {
+    white-space: pre-wrap;
+    font-family: $fixed-font-family;
+    font-size: 0.65em;
+    line-height: 1.5;
+    
+    @include black-scheme;
+    
+    * {
+        font-family: inherit;
+    }
+}

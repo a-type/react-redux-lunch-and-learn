@@ -1,0 +1,3 @@
+@mixin shadow($size) {
+    box-shadow: 0 $size * 1px $size * 4px black;
+}

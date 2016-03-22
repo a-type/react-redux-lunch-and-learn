@@ -1,0 +1,39 @@
+@mixin dark-scheme {
+    background: $color-dark;
+    color: $color-white;
+}
+
+@mixin dark-accent-scheme {
+    background: $color-dark;
+    color: $color-accent;
+}
+
+@mixin light-scheme {
+    background: $color-white;
+    color: $color-dark;
+}
+
+@mixin gray-scheme {
+    background: darken($color-white, 15%);
+    color: $color-dark;
+}
+
+@mixin medium-scheme {
+    background: $color-light;
+    color: $color-dark;
+}
+
+@mixin light-accent-scheme {
+    background: $color-white;
+    color: $color-accent;
+}
+
+@mixin black-scheme {
+    background: $color-black;
+    color: $color-white;
+}
+
+@mixin accent-scheme {
+    background: $color-accent;
+    color: $color-white;
+}

@@ -1,0 +1,14 @@
+.guess {
+    @include flex-vertical;
+}
+
+.guess-info {
+    @include flex-basic;
+    @include flex-outside-content;
+    @include flex-align-bottom;
+    color: $color-light;
+}
+
+.guess-message {
+    @extend .header-large;
+}

@@ -1,0 +1,16 @@
+.header, h3, h4 {
+    font-family: $base-font-family;
+    font-weight: $bold;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.header-large, h2 {
+    @extend .header;
+    font-size: $base-font-size * 3;
+}
+
+.header-huge, h1 {
+    @extend .header;
+    font-size: $base-font-size * 5;
+}

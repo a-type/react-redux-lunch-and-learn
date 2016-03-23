@@ -20,7 +20,7 @@ button {
     cursor: pointer;
 
     &:hover {
-        @include gray-scheme;
+        @include accent-scheme;
     }
 }
 

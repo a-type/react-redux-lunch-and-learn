@@ -4,8 +4,9 @@ let Highlight = require('react-highlight');
 
 let code = `
 class Profile extends Component {
-    getInitialState () {
-        return { user: null };
+    constructor (props) {
+        super(props);
+        this.state = { user: null };
     }
 
     componentDidMount () {

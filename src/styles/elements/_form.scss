@@ -1,9 +1,13 @@
-input {
+input[type='text'] {
     border: none;
     background: $color-light;
-    font-size: 4em;
     color: $color-dark;
     text-align: center;
+    padding: 8px;
+}
+
+input.guess-input {
+    font-size: 4em;
     padding: 16px;
 }
 
@@ -31,4 +35,21 @@ input, button {
 form {
     @include flex-vertical;
     margin: 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+
+    &>input {
+        margin-top: 8px;
+    }
+}
+
+.required-marker {
+    &:before {
+        content: '*';
+        color: $color-accent;
+        margin-right: 8px;
+    }
 }

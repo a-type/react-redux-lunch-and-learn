@@ -3,23 +3,32 @@ import React from 'react';
 let Highlight = require('react-highlight');
 
 let code = `
+import Icon from './Icon';
+import Bio from './Bio';
+
 class Profile extends Component {
     constructor (props) {
         super(props);
-        this.state = { user: null };
+        this.state = {
+            user: {
+                iconSrc: '/icons/default.png',
+                username: 'Loading...',
+                bio: 'Loading...'
+            }
+        };
     }
 
     componentDidMount () {
-        let user = await sdk.getUser();
+        let user = await sdk.getUser(this.props.userId);
         this.setState({ user: user });
     }
 
     render () {
         const user = this.state.user;
         return (<div>
-            <Icon source={user ? user.iconSrc : ''} />
-            <h2>{user ? user.username : 'Loading...'}</h2>
-            <Bio text={user ? user.bio : ''} />
+            <Icon source={user.iconSrc} />
+            <h2>{user.username}</h2>
+            <Bio text={user.bio} />
         </div>);
     }
 }

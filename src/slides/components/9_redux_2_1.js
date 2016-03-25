@@ -6,7 +6,7 @@ import { SET_SLIDE } from '../constants/ActionTypes';
 export function setCurrentSlide (slide) {
     return {
         type: SET_SLIDE,
-        slide: slide
+        payload: { slide }
     };
 }
 `;

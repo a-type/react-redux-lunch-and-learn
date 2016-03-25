@@ -6,8 +6,8 @@ export default { content: (
         <ul>
             <li>created by Dan Abramov @gaearon @dan_abramov</li>
             <li>based on functional programming patterns</li>
-            <li>stark and simple application state model</li>
-            <li>minimal state manipulation api</li>
+            <li>simple application state model</li>
+            <li>minimal state manipulation actions</li>
             <li>app logic is one function: reducer</li>
         </ul>
     </div>

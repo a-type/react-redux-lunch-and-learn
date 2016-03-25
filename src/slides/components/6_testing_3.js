@@ -6,7 +6,7 @@ export default { content: (
         <ul>
             <li>keep boundaries clean</li>
             <li>separate logic and presentation</li>
-            <li>preferrably, to the extent of being view-agnostic</li>
+            <li>preferrably, to the extent of being view-independent</li>
         </ul>
     </div>
 ), theme: 'light' }

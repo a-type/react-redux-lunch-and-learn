@@ -8,9 +8,9 @@ import guess from './guess';
 import profile from './profile';
 
 const rootReducer = combineReducers({
-    currentSlide,
-    guess,
-    profile
+    currentSlide, // slideshow state
+    profile, // profile example state
+    guess // ???
 });
 
 export default rootReducer;

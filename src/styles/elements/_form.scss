@@ -8,6 +8,10 @@ input[type='text'] {
 
 input.guess-input {
     font-size: 4em;
+    background: $color-light;
+    color: $color-dark;
+    border: none;
+    text-align: center;
     padding: 16px;
 }
 

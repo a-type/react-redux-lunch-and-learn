@@ -6,7 +6,7 @@ export default { content: (
         <ul>
             <li>View-only framework</li>
             <li>Isomorphic</li>
-            <li>Opinionated, but limited</li>
+            <li>Intuitive abstraction</li>
         </ul>
     </div>
 ) }

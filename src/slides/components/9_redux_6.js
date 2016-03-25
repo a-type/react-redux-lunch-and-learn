@@ -2,7 +2,7 @@ import React from 'react';
 let Highlight = require('react-highlight');
 
 let code = `
-import { NEXT_SLIDE, PREV_SLIDE } from '../constants/ActionTypes';
+import { NEXT_SLIDE, PREV_SLIDE, SET_SLIDE } from '../constants/ActionTypes';
 
 const reduce = (state = 0, action) => {
     switch (action.type) {
@@ -16,6 +16,8 @@ const reduce = (state = 0, action) => {
             else {
                 return state;
             }
+        case SET_SLIDE:
+            return action.payload.slide;
         default:
             return state;
     }
@@ -33,6 +35,12 @@ let example = `
 
     state = reduce(0, { type: PREV_SLIDE });
     assert.equal(state, 0);
+
+    state = reduce(0, {
+        type: SET_SLIDE,
+        payload: { slide: 1 }
+    });
+    assert.equal(state, 1);
 
     state = reduce(10, { type: 'foo' });
     assert.equal(state, 10);
